@@ -1,5 +1,6 @@
+
 % Intro Options
-\ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
+\ProvidesClass{cv-template}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
@@ -10,7 +11,7 @@
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+%\usepackage{hyperref}
 
 % Publications
 \usepackage{cite}
@@ -20,12 +21,12 @@
 \usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{date}{HTML}{666666} 
 \definecolor{primary}{HTML}{2b2b2b} 
-\definecolor{headings}{HTML}{6A6A6A}
+\definecolor{headings}{HTML}{303030}
 \definecolor{subheadings}{HTML}{333333}
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmainfont[Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Date command
@@ -82,3 +83,6 @@ Last Updated on \today
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
+%To make the hyperlinks blue
+\usepackage[colorlinks = true,
+            allcolors = blue]{hyperref}
