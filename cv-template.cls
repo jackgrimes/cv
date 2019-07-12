@@ -24,6 +24,7 @@
 \definecolor{headings}{HTML}{303030}
 \definecolor{subheadings}{HTML}{333333}
 
+
 % Set main fonts
 \usepackage{fontspec}
 \setmainfont[Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
