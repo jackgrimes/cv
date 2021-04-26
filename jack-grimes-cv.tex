@@ -51,6 +51,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 
+\newcommand{\discolorlinks}[1]{{\hypersetup{hidelinks}#1}}
+
 %\urlstyle{same}
  
 \begin{document}
@@ -90,17 +92,17 @@ London, UK
 
 \subsection{\href{https://www.imperial.ac.uk}{Imperial College London}}
 \descript{Ph.D. Engineering/Epidemiology}
-\location{Sep 2015 | London, UK}
+\location{\normalfont{September 2015}}
 \sectionsep
 
 \subsection{\href{https://www.imperial.ac.uk}{Imperial College London}}
 \descript{M.Sc. Environmental Engineering and Sustainable Development}
-\location{Sep 2011 | London, UK}
+\location{\normalfont{September 2011}}
 \sectionsep
 
 \subsection{\href{https://www.ox.ac.uk}{University of Oxford}}
 \descript{M.A. (Oxon) Physics}
-\location{Sep 2010 | Oxford, UK}
+\location{\normalfont{September 2010}}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -151,16 +153,27 @@ Google Scholar: \href{https://scholar.google.co.uk/citations?hl=en&user=HZLogpQA
 \section{Skills}
 \subsection{Programming}
 \location{Very familiar:}
-Python \textbullet{} R \textbullet{} Git/GitHub \\
-Matlab/Octave\\ 
+\discolorlinks{\href{https://www.python.org/}{Python} \textbullet{} 
+\href{https://www.r-project.org/}{R} \textbullet{} 
+\href{https://git-scm.com/}{Git}/\href{https://github.com/}{GitHub} \\
+\href{https://www.mathworks.com/products/matlab.html}{Matlab}/\href{https://www.gnu.org/software/octave/index}{Octave}} \\
+
 %\location{Over 1000 lines:}
 \location{Familiar:}
-SQL \textbullet{} VBA \textbullet{} Javascript \textbullet{} HTML \\
-CSS \textbullet{} \LaTeX\
+\discolorlinks{SQL \textbullet{} 
+\href{https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office}{VBA} \textbullet{} 
+\href{https://www.javascript.com/}{JavaScript} \textbullet{} 
+HTML \\
+CSS \textbullet{}  
+\href{https://www.latex-project.org/}{\LaTeX}
 \vspace{1.5mm} % Hacky fix for awkward extra vertical space
+
 \subsection{Platforms}
-Google Cloud Platform \textbullet{} Domino
+\href{https://cloud.google.com/}{Google Cloud Platform} \textbullet{}
+\href{https://www.dominodatalab.com/}{Domino}
+}
 \sectionsep
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -188,20 +201,31 @@ A more detailed version of my CV can be found on my \href{http://www.jackgrimes.
 
 \runsubsection{\href{https://morsum.co/}{Morsum}}
 \descript{Senior Data Scientist}
-\location{March 2021 - Present, London, UK}
+\location{March 2021 - Present \normalfont{London, UK}}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item CI/CD pipelines using GitHub Actions
+\item CI/CD pipelines using 
+\discolorlinks{{\href{https://github.com/features/actions/}{GitHub Actions}}}
 \end{tightemize}
 
 \sectionsep
 
 \runsubsection{\href{https://www.lloydsbankinggroup.com}{Lloyds Banking Group}}
 \descript{Data Scientist, Applied Science}
-\location{January 2019 - March 2021, London, UK}
+\location{January 2019 - March 2021 \normalfont{London, UK}}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Predominantly using Python, Git, PyCharm, Jenkins, pandas, spaCy, scikit-learn, pytest, NetworkX
+\item Predominantly using 
+\discolorlinks{{\href{https://www.python.org/}{Python}}}, 
+\discolorlinks{{\href{https://git-scm.com/}{Git}}}, 
+\discolorlinks{{\href{https://www.jetbrains.com/pycharm/}{PyCharm}}}, 
+\discolorlinks{{\href{https://www.jenkins.io/}{Jenkins}}}, 
+\discolorlinks{{\href{https://pandas.pydata.org/}{pandas}}},
+\discolorlinks{{\href{https://spacy.io/}{spaCy}}},
+\discolorlinks{{\href{https://scikit-learn.org/}{scikit-learn}}}, 
+\discolorlinks{{\href{https://docs.pytest.org/}{pytest}}},
+\discolorlinks{{\href{https://networkx.org/}{NetworkX}}}
+
 \item Natural language processing (NLP), network analysis, classification, clustering
 \item High-quality (efficient and readable), production-ready unit-tested code
 \item Running the \textit{Modelling Interest Group}, organising sessions about interesting modelling topics
@@ -212,13 +236,22 @@ A more detailed version of my CV can be found on my \href{http://www.jackgrimes.
 
 \runsubsection{\href{https://www.lloydsbankinggroup.com}{Lloyds Banking Group}}
 \descript{Data Scientist, Risk Innovation}
-\location{August 2017 – December 2018, London, UK}
+\location{August 2017 – December 2018 \normalfont{London, UK}}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Predominantly using Python, Git, SAS VA, Flask
-\item Predictive analytics using pandas, scikit-learn
-\item Fraud prevention using face\char`_recognition
-\item Topic modelling using Gensim, Latent Dirichlet allocation, SAS VA
+\item Predominantly using 
+\discolorlinks{{\href{https://www.python.org/}{Python}}}, 
+\discolorlinks{{\href{https://git-scm.com/}{Git}}}, 
+\discolorlinks{{\href{https://www.sas.com/en_gb/software/visual-analytics.html}{SAS VA}}}, \discolorlinks{{\href{https://flask.palletsprojects.com/}{Flask}}}
+\item Predictive analytics using 
+\discolorlinks{{\href{https://pandas.pydata.org/}{pandas}}}, 
+\discolorlinks{{\href{https://scikit-learn.org/stable/}{scikit-learn}}}
+\item Fraud prevention using 
+\discolorlinks{{\href{https://pypi.org/project/face-recognition/}{face\char`_recognition}}}
+\item Topic modelling using 
+\discolorlinks{{\href{https://radimrehurek.com/gensim/}{Gensim}}}, 
+Latent Dirichlet allocation, 
+\discolorlinks{{\href{https://www.sas.com/en_gb/software/visual-analytics.html}{SAS VA}}}
 \item Line-management of an intern
 \item Presented my work widely, at internal conferences throughout the UK
 \end{tightemize}
@@ -231,24 +264,24 @@ A more detailed version of my CV can be found on my \href{http://www.jackgrimes.
 \section{Research}
 \runsubsection{\href{https://www.imperial.ac.uk}{Imperial College London}}
 \descript{Postdoctoral Researcher}
-\location{January 2016 – July 2017, London, UK}
+\location{January 2016 – July 2017 \normalfont{London, UK}}
 \begin{tightemize}
-\item Mixed effects logistic regression to compare environmental risk factors, parasites, and overall health, using R and lme4 (\href{https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005948}{paper})
-\item Using parasite infection intensity and Box-Cox transformations, for more accurate estimations of parasite infection prevalence, using R
+\item Mixed effects logistic regression to compare environmental risk factors, parasites, and overall health, using \discolorlinks{{\href{https://www.r-project.org/}{R}}} and \discolorlinks{{\href{https://cran.r-project.org/web/packages/lme4/lme4.pdf}{lme4}}} (\href{https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005948}{paper})
+\item Using parasite infection intensity and Box-Cox transformations, for more accurate estimations of parasite infection prevalence, using \discolorlinks{{\href{https://www.r-project.org/}{R}}}
 \end{tightemize}
 \sectionsep
 
 
 \runsubsection{\href{https://www.imperial.ac.uk}{Imperial College London}}
 \descript{Ph.D. Research}
-\location{March 2012 – December 2015, London, UK}
+\location{March 2012 – December 2015 \normalfont{London, UK}}
 Thesis: {\href{https://spiral.imperial.ac.uk/handle/10044/1/44497}{\textit{An investigation into the roles of water, sanitation, and hygiene in the control of schistosomes and other helminths}}}
 \begin{tightemize}
-\item Statistical analyses in R, and systematic review and meta-analysis (\href{https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003296}{paper})
-\item Presentations at the American Society of Tropical Medicine and Hygiene Annual Meetings (2012, 2013 and 2016) and many other conferences
-\item Fieldwork: around 6 months in Ethiopia
-\item Supervision of two M.Sc. students during my Ph.D. work (and, more recently, an MEng student in 2020)
-\item First author of 6 papers, also contributed to 5 more (see \href{https://scholar.google.co.uk/citations?hl=en&user=HZLogpQAAAAJ}{Google Scholar})
+\item Statistical analyses in \discolorlinks{{\href{https://www.r-project.org/}{R}}} and systematic review and meta-analysis (\href{https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003296}{paper})
+\item Presentations at the \discolorlinks{{\href{https://www.astmh.org/}{American Society of Tropical Medicine and Hygiene Annual Meetings}}} (2012, 2013 and 2016) and many other conferences
+\item Fieldwork: around six months in Ethiopia
+\item Supervision of two M.Sc. students during my Ph.D. work (and, more recently, an M.Eng. student in 2020)
+\item First author of six papers, also contributed to five more (see \href{https://scholar.google.co.uk/citations?hl=en&user=HZLogpQAAAAJ}{Google Scholar})
 \end{tightemize}
 \sectionsep
 
